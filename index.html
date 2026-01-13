@@ -138,28 +138,39 @@
 
         .image-placeholder {
             background: #1a1a1a;
-            border: 2px dashed #00ff00;
+            border: 2px solid #00ff00;
             border-radius: 10px;
-            padding: 40px;
+            padding: 20px;
             text-align: center;
             margin: 20px 0;
-            min-height: 300px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
 
-        .image-placeholder h4 {
-            color: #00ff00;
-            margin-bottom: 15px;
-            font-size: 1.3em;
+        .image-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
         }
 
-        .image-placeholder p {
-            color: #00cc00;
-            line-height: 1.6;
-            max-width: 600px;
+        .interactive-diagram img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
         }
 
         .info-panel {
@@ -579,7 +590,7 @@
                 <p><strong>How it works:</strong> In multi-point injection, there are TWO different methods of injector positioning. Each cylinder has its own injector that sprays fuel directly into the intake port. This provides precise fuel control for each cylinder.</p>
                 
                 <div class="image-placeholder">
-                    <img src="mpfi-system-diagram.jfif" alt="Multi-Point Fuel Injection System Diagram" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    <img src="mpfi-system-diagram.jfif" alt="Multi-Point Fuel Injection System Diagram">
                 </div>
                 
                 <div class="advantages-disadvantages">
@@ -610,7 +621,7 @@
                 <p><strong>How it works:</strong> A single injector is located in the throttle body, spraying fuel for all cylinders. The fuel mixes with air before being distributed to each cylinder through the intake manifold.</p>
                 
                 <div class="image-placeholder">
-                    <img src="spi-system-diagram.png" alt="Single Point Injection System Diagram" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    <img src="spi-system-diagram.png" alt="Single Point Injection System Diagram">
                 </div>
                 
                 <div class="advantages-disadvantages">
@@ -647,7 +658,7 @@
                 
                 <div class="interactive-diagram">
                     <div class="image-placeholder">
-                        <img src="simple-carburettor-diagram.webp" alt="Simple Carburettor Cross-Section Diagram" style="max-width: 100%; height: auto; border-radius: 10px;">
+                        <img src="simple-carburettor-diagram.webp" alt="Simple Carburettor Cross-Section Diagram">
                     </div>
                     
                     <div id="info-float" class="info-panel">
@@ -947,9 +958,9 @@
             <p>Drag the labels to the correct positions on the diagram:</p>
             
             <div class="drag-drop-area">
-                <div class="diagram-container" style="min-height: 400px; position: relative;">
-                    <div class="image-placeholder" style="min-height: 300px;">
-                        <img src="fuel-system-labeling-diagram.jfif" alt="Complete Fuel System Diagram for Labeling" style="max-width: 100%; height: auto; border-radius: 10px;">
+                <div class="diagram-container" style="position: relative;">
+                    <div class="image-placeholder">
+                        <img src="fuel-system-labeling-diagram.jfif" alt="Complete Fuel System Diagram for Labeling">
                     </div>
                     
                     <!-- Drop Zones -->
